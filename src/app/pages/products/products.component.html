@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="card col-3" style="width: 18rem;" *ngFor="let i of loop">   
+            <img src="{{i.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">{{i.price}}</p>
+            <p class="card-text">{{discontprice(i.price,i.discount)}}</p>
+            <button  class="btn btn-primary" (click)="cartadd(i)">add to cart</button>>
+        </div>
+    </div>
+</div>
